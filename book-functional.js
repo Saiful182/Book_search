@@ -44,7 +44,7 @@ const displayBookDetails = BookDetails => {
                     <div class= "card-body">
                     <h5 class="card-title">${book.title}</h5>
                     <p class="card-text">Author Name: ${book.author_name}</p >
-                    <p class="card-text">Publisher Name: ${book.publisher}</p>
+                    <p class="card-text">Publisher Name: ${book.publisher[0]}</p>
                     <p class="card-text">Publish Year : ${book.first_publish_year}</p>
                     </div > `;
         divContainer.appendChild(div)
