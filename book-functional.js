@@ -25,8 +25,10 @@ const displayBookDetails = BookDetails => {
     // clear div element
     divContainer.innerHTML = '';
     const resultCount = document.getElementById('result-count');
-    resultCount.innerText = `${BookDetails.numFound}`
-
+    resultCount.innerText = `${BookDetails.numFound}`;
+    if (BookDetails.numFound === 0) {
+        alert('No Result Found.Please type valid book name.');
+    }
     const books = BookDetails.docs;
 
     // loop for getting values from array books
